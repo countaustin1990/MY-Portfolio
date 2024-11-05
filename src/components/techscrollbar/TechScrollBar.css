@@ -1,0 +1,30 @@
+.tech-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 60px; /* Adjust height as needed */
+}
+
+.tech-scroll-content {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 10s linear infinite; /* Adjust duration for speed */
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.tech-icon {
+  font-size: 40px; /* Adjust size as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
